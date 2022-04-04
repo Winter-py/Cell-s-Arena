@@ -1,23 +1,10 @@
 
-a = input('insert a number')
-b = input('insert a number')
-c = input('insert a number')
+a = float (input('insert a number'))
+b = float (input('insert a number'))
 
 
-def add(a):
+def add(a, b):
     result = a + b
     return result
 
-def sub(a):
-    result = a - b
-    return result
-
-def divide(a):
-    result = a / b
-    return result
-
-def muilt(a):
-    result = a * b
-    return result
-
-print (muilt(9))
+print(add(a, b))
