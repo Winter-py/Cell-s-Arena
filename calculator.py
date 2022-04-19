@@ -1,6 +1,6 @@
-a = float (input('insert a number '))
+a = int (input('insert a number '))
 operator = input('insert an operator ')
-b = float (input('insert a number '))
+b = int (input('insert a number '))
 
 def add(a, b):
     result = a + b
@@ -19,6 +19,7 @@ def divide(a, b):
     return result
 
 # Runa all the calculations through a if statement
+
 if operator == '+':
     print(add(a, b))
 elif operator == '-':
@@ -33,4 +34,5 @@ elif operator == '//':
     print(a // b)   
 else:
     print('invalid operator')
+
 
