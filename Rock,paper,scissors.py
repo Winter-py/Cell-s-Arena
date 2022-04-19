@@ -14,3 +14,15 @@ elif user_input == "Rock":
         print("You lose!", random.hand, "covers", user_input)
     else:
         print("You win!", user_input, "smashes", random.hand)
+
+if user_input == "Paper":
+    if random.hand == "Scissors":
+        print("You lose!", random.hand, "cut", user_input)
+    else:
+        print("You win!", user_input, "covers", random.hand)
+
+if user_input == "Scissors":
+    if random.hand == "Rock":
+        print("You lose...", random.hand, "smashes", user_input)
+    else:
+        print("You win!", user_input, "cut", random.hand)
