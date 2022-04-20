@@ -1,11 +1,11 @@
 #Rock, paper, scissors
 import random
 while True:
-    hands = ["Rock", "Paper", "Scissors"]
 
     user_input = input("Rock, paper, scissors? ")
-
+    hands = ["Rock", "Paper", "Scissors"]
     random.hand = random.choice(hands)
+    
 
     if user_input == random.hand:
         print("It's a tie!")
