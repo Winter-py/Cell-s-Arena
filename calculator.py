@@ -34,5 +34,6 @@ elif operator == '//':
     print(a // b)   
 else:
     print('invalid operator')
+    break
 
 
