@@ -1,18 +1,32 @@
 #Countdown Timer Project
 import datetime
-import time 
+from datetime import timedelta
+
+# time = datetime.datetime.now()
+# starttime = timedelta(hours=1, minutes=5)
+# countdown = timedelta(minutes=60)
+
+# print(starttime - countdown)
 
 
-countdown_time = datetime.datetime.now() + datetime.timedelta(days=1)
-
-def countdown(countdown_time):
-    while True:
-        now = datetime.datetime.now()
-        if now > countdown_time:
-            print("Time's up!")
-            break
-        else:
-            time_left = countdown_time - now
-            print(time_left)
-            time.sleep(1)
-
+# import the time module
+import time
+  
+# define the countdown func.
+def countdown(t):
+    
+    while t:
+        mins, secs = divmod(t, 60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer, end="\r")
+        time.sleep(1)
+        t -= 1
+      
+    print('Fire in the hole!!')
+  
+  
+# input time in seconds
+t = input("Enter the time in seconds: ")
+  
+# function call
+countdown(int(t))
