@@ -2,38 +2,45 @@ a = int (input('insert a number '))
 operator = input('insert an operator ')
 b = int (input('insert a number '))
 
-def add(a, b):
+def add(a,b):
     result = a + b
-    return result
+    print(result)
 
 def subtract(a, b):
     result = a - b
-    return result
+    print(result)
 
 def multiply(a, b):
     result = a * b
-    return result
+    print(result)
 
 def divide(a, b):
     result = a / b
-    return result
+    print(result)
 
-# Runa all the calculations through a if statement
+def power(a, b):
+    result = a ** b
+    print(result)
+
+def unknown(a, b):
+    result = a // b
+    print(result)
+
+# Run all the calculations through a if statement
 
 if operator == '+':
-    print(add(a, b))
+    add(a,b)
 elif operator == '-':
-    print(subtract(a, b))
+    subtract(a,b)
 elif operator == '*':
-    print(multiply(a, b))
+    multiply(a,b)
 elif operator == '/':
-    print(divide(a, b))
+    divide(a,b)
 elif operator == '**':
-    print(a ** b)
+    power(a,b)
 elif operator == '//':
-    print(a // b)   
+    unknown(a,b)   
 else:
     print('invalid operator')
-    break
-
+    
 
